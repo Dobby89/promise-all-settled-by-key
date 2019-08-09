@@ -39,7 +39,7 @@ promiseAllSettledByKey(promiseMap).then(settled => {
 
 ### Resolved ONLY
 
-You can set `onlyRejected = true` to return only the **resolved** promises.
+You can set `{ onlyResolved = true }` to return only the **resolved** promises.
 
 ```javascript
 promiseAllSettledByKey(promiseMap, { onlyResolved: true }).then(settled => {
@@ -54,7 +54,7 @@ promiseAllSettledByKey(promiseMap, { onlyResolved: true }).then(settled => {
 
 ### Rejected ONLY
 
-You can set `onlyRejected = true` to return only the **resolved** promises.
+You can set `{ onlyRejected = true }` to return only the **rejected** promises.
 
 ```javascript
 promiseAllSettledByKey(promiseMap, { onlyRejected: true }).then(settled => {
