@@ -1,12 +1,17 @@
-# promise-all-settled-by-key
+# Promise All Settled By Key
+
+[![Build Status](https://travis-ci.org/Dobby89/promise-all-settled-by-key.svg)](https://travis-ci.org/Dobby89/promise-all-settled-by-key)
+[![Total Downloads](https://img.shields.io/npm/dt/promise-all-settled-by-key.svg)](https://www.npmjs.com/package/promise-all-settled-by-key)
+[![Latest Release](https://img.shields.io/npm/v/promise-all-settled-by-key.svg)](https://github.com/Dobby89/promise-all-settled-by-key/releases)
+[![License](https://img.shields.io/npm/l/promise-all-settled-by-key.svg)](https://github.com/Dobby89/promise-all-settled-by-key/blob/master/LICENSE)
 
 Returns a promise that resolves after all of the given promises have either resolved or rejected, with an object that contains the *resolved* status and *value* of each promise.
 
 ## Why?
 
-[Promise.allSettled()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled) returns promises in an array with no index or key, so you can't easily track what happened to which promise.
+[Promise.allSettled()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled) returns promises in an array with no index or key, so you can't track what happened to which promise.
 
-This method makes it possible to determine the outcome and value of specific promises.
+However, this package makes it possible to determine the outcome and value of specific promises because it returns each promise by key.
 
 ## Installation
 
